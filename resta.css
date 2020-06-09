@@ -1,0 +1,714 @@
+*{
+    text-transform: uppercase;
+    font-weight: bold;
+    /*filter: grayscale(100%);*/
+}
+
+
+html{
+    background-image: url("./Imagenes/image-from-rawpixel-id-513083-jpeg.jpg");
+    background-size: 40em;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+body{
+    background-color: #fff9d2;
+    margin:1em 2em;
+    padding: 1em;
+}
+   
+   
+h1{
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 4.5em;
+    margin: .125em 0;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    height: 32em;
+}
+
+    main > div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    main>div>figure:first-of-type{
+        margin-right: 0px;
+    }
+
+
+label{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 4em;
+    margin-right: .5em;
+    margin-left: 0.25em;
+}
+
+figure{
+    margin-top: 0.5em;
+    height: 10em;
+}
+
+
+
+#operacion{
+    margin: 3.25em auto 0.5em auto;
+    display: flex;
+    align-items: center;
+}
+#operacion>label{
+    font-size: 2.75em !important;
+    font-family: 'Sacramento', cursive;
+}
+#seleccion>div>div{
+    font-size: 2.5em !important;
+    font-family: 'Sacramento', cursive !important;
+    border: 5px solid transparent !important;
+}
+
+
+    #guardar{
+        background-color: white;
+        border: 3px solid transparent;
+        box-shadow: 0px 3px 5px 2px #aaa;
+        font-family: 'Amatic SC', cursive !important;
+        font-size: 2em;
+        width: 10em;
+        margin: 0.25em auto;
+        margin-left: 2em;
+        border-radius: 10px;
+    }
+
+    #guardar:hover{
+        cursor: pointer;
+    }
+
+    #seleccion>div>div:focus, #guardar:focus{
+        box-shadow: none;
+        color: white;
+        background-color: black;
+        outline: none;
+        border: 5px solid white !important;
+    }
+
+
+
+
+#contenedor{
+    display: flex;
+    margin: auto;
+}
+
+    #seleccion{
+        display: flex;
+        flex-direction: column;
+        margin-left: .5em;
+    }
+
+        #seleccion > div{
+            display: flex;
+            flex-direction: row;
+        }
+
+            #seleccion > div > div {
+                margin: 0.25em 0.25em;
+                font-size: 2.5em;
+                font-weight: bold;
+                padding:  0.25em 0.5em 0.125em 0.5em;
+                border: none;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0px 3px 5px 2px #aaa;
+                cursor: pointer;
+                width: 1.5em;
+                height: 1.5em;
+            }
+
+            #seleccion > div > div:hover{
+                 box-shadow: 0px 0px;
+            }
+
+
+
+
+
+    #saco{
+        margin-top: 1em;
+        margin-right: 2em;
+        width: 30em;
+    }
+
+    #saco>img:focus{
+        outline: 3px solid black;
+       box-shadow: 0 0 5px 3px black;
+    }
+
+        #saco>img{
+                width: 20em;
+                margin: 2em 3em;
+        }
+
+        #saco>img:hover{
+            width: 22.5em;
+            margin: 1.5em;
+            cursor: pointer;
+        }
+
+	#saco>label{
+		font-size: 2.5em !important;
+		padding-right: 2.25em;
+	}
+
+        
+    #metidas{
+        position: absolute;
+        top: 45%;
+        left: 60%;
+    }
+
+    .icon-arrows-ccw{
+        font-size: 3.5em;
+        position: absolute;
+        top: 47%;
+        left: 64%;
+    }
+
+
+
+
+body>div{
+    display: flex;
+    justify-content: space-around;
+}
+
+    #volver, #corregir, #ayuda{
+        font-size: 2em;
+		font-weight: bold;
+		padding: .25em;
+        width: 5em;
+        cursor: pointer;
+        text-align: center;
+    	font-family: 'Amatic SC', cursive;
+        border: 2px solid transparent;
+    }
+
+    #ayuda:focus, #volver:focus, #corregir:focus{
+        box-shadow: none;
+        border: 2px solid white;
+        color: white;
+        background: #000000;
+        border-radius: 0.25em;
+        outline: none;
+    }
+
+
+
+
+
+.seleccionado{
+    background-color: #F5DA81 !important;
+    box-shadow: none !important;
+}
+
+
+.acertaste{
+	background-color: #BCF5A9 !important;
+}
+
+
+.correcto{
+    width: 1.5em;
+    position: relative;
+    left: 50%;
+    bottom: 95px;
+}
+
+.incorrecto{
+    width: 1.5em;
+    position: relative;
+    left: 50%;
+    bottom: 85px;
+}
+
+.quitalo{
+    color: #aaa;
+}
+
+
+
+
+.swal-modal{
+    height: fit-content !important;
+    margin: auto;
+}
+div.swal-footer{
+    text-align: center !important;
+}
+.swal-button,.swal-button:focus{
+    background-color: #ffc577;
+    box-shadow: 0px 5px 10px 5px #aaa; 
+}
+.swal-button:hover{
+    background-color: #ffb959 !important;
+    border-color: #ffb959 !important;
+    box-shadow: 0px 0px !important;
+}
+
+.swal-button:focus{
+    background-color: black !important;
+    border-color: white !important;
+    box-shadow: 0px 0px !important;
+}
+
+h1,#saco>label,body>div:last-of-type>input,#rejugar{
+    font-family: 'Amatic SC', cursive;
+}
+
+#rejugar{
+    display: none;
+}
+
+body>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boton{
+    float: right;
+    margin: 0.5em;
+    font-size: 2em;
+    padding: 0.3em 0.5em;
+    border-radius: 5px;
+    background-color: #b5e8ff;
+    border-color: #b5e8ff;
+    font-weight: bold; 
+    box-shadow: 0px 5px 10px 5px #aaa; 
+    font-family: 'Amatic SC', cursive !important;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.boton:hover{
+    background-color: #87d9ff;
+    border-color: #87d9ff;
+    box-shadow: 0px 0px;
+}
+
+
+
+/************************************* SUBTITULOS *********************************/
+
+
+#subtitulos{
+    margin: auto;
+    /*position: absolute;
+    left: 10%;
+    bottom: 10%;*/
+    background-color: #aaa;
+    border-radius: .5em;
+    font-size: 1.5em;
+    width: fit-content;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+
+/******************************* ANIMACIONES ***********************************/
+
+#mano, #mano8, #mano2, #mano3, #mano4, #mano5, #mano6, #mano7{
+    position: absolute;
+    z-index: 1;
+}
+
+
+.anim8{
+    animation-duration: 1s;
+    animation-name: anim8;
+    animation-iteration-count: 3;
+}
+
+.anim1{
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-name: anim1;
+    animation-iteration-count: 3;
+}
+
+.anim7{
+    animation-delay: 9.25s;
+    animation-duration: 1s;
+    animation-name: anim7;
+    animation-iteration-count: 4;
+}
+
+.anim2{
+    animation-delay: 13.5s;
+    animation-duration: 1s;
+    animation-name: pulsa;
+    animation-iteration-count: 5;
+}
+
+.anim3{
+    animation-delay: 18.75s;
+    animation-duration: 4s;
+    animation-name: elegir;
+    animation-iteration-count: 1;
+}
+
+.anim41{
+    animation-delay: 22.75s;
+    animation-duration: 1s;
+    animation-name: pulsando;
+    animation-iteration-count: 2;
+}
+
+    .anim42{
+        animation-delay: 22.75s;
+        animation-duration: 8s;
+        animation-name: fondo;
+    }
+
+.anim5{
+    animation-delay: 24.75s;
+    animation-duration: 2s;
+    animation-name: corregir;
+    animation-iteration-count: 1;
+}
+
+.anim61{
+    animation-delay: 26.75s;
+    animation-duration: 1s;
+    animation-name: pulsando2;
+    animation-iteration-count: 3;
+}
+
+    .anim62{
+        animation-delay: 26.75s;
+        animation-duration: 3s;
+        animation-name: corrigiendo;
+    }
+
+
+
+
+
+
+ @keyframes anim8{
+        from{
+            top:38%;
+            left: 23%;
+            background-image: url("./Imagenes/mano.png");
+            background-size: 5em; 
+            width: 5em;
+            height: 6em;
+        }
+    
+        50%{
+            background-image: url("./Imagenes/mano.png");
+            background-size: 5em; 
+            width: 5em;
+            height: 6em;  
+            top: 42%;
+        }
+    
+        to{  
+            top: 38%;
+            left: 23%;
+            background-image: url("./Imagenes/mano.png");
+            background-size: 5em; 
+            width: 5em;
+            height: 6em;
+        }
+}
+
+
+@keyframes anim1 {
+    from { top: 28%;    left: 22.5%;    background-image: url("./Imagenes/mano.png"); background-size: 5em; width:5em; height: 6em;}
+    to   { top: 50%;    left: 60%;    background-image: url("./Imagenes/mano.png"); background-size: 5em; width:5em; height: 6em;}
+}
+
+
+@keyframes anim7{
+    from{
+        top:70%;
+        left: 8%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    50%{
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;  
+        top: 75%;
+    }
+
+    to{  
+        top: 70%;
+        left: 8%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+}
+
+@keyframes pulsa{
+    from{
+        top:50%;
+        left: 60%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    40%{
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    50%{
+        background-image: url("./Imagenes/mano.png");
+        background-size: 4em; 
+        width: 4em;
+        height: 5em;  
+    }
+
+    60%{
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    to{  
+        top: 50%;
+        left: 60%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+}
+
+@keyframes elegir{
+    from{
+        top:60%;
+        left: 35%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    20%{
+        top:70%;
+        left: 25%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    40%{
+        top:60%;
+        left: 35%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    60%{
+        top:60%;
+        left: 25%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    80%{
+        top:70%;
+        left: 35%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    to{
+        top:60%;
+        left: 35%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+}
+
+@keyframes pulsando{
+
+    from{
+        top:60%;
+        left: 35%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    40%{
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    50%{
+        background-image: url("./Imagenes/mano.png");
+        background-size: 4em; 
+        width: 4em;
+        height: 5em;  
+    }
+
+    60%{
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    to{  
+        top: 60%;
+        left: 35%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+}
+
+    @keyframes fondo {
+        from{
+            background-color: white;
+            box-shadow: 0px 3px 5px 2px #aaa;
+        }
+        19%{
+            background-color: white;
+            box-shadow: 0px 3px 5px 2px #aaa;
+        }
+        20%{
+            
+            background-color: #ffb959;
+            box-shadow: none;
+        }
+        to{
+            background-color: #ffb959;
+            box-shadow: none;
+        }
+    }
+
+@keyframes corregir{
+
+    from{
+        top:60%;
+        left: 35%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+
+    to{  
+        top: 90%;
+        left: 80%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+}
+
+@keyframes pulsando2{
+
+    from{
+        top:90%;
+        left: 80%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    40%{
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    50%{
+        background-image: url("./Imagenes/mano.png");
+        background-size: 4em; 
+        width: 4em;
+        height: 5em;  
+    }
+
+    60%{
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+    to{  
+        top: 90%;
+        left: 80%;
+        background-image: url("./Imagenes/mano.png");
+        background-size: 5em; 
+        width: 5em;
+        height: 6em;
+    }
+
+}
+
+    @keyframes corrigiendo {
+        from{
+            background-color: #b5e8ff;
+            box-shadow: 0px 5px 10px 5px #aaa; 
+        }
+        15%{
+            background-color: #b5e8ff;
+            box-shadow: 0px 5px 10px 5px #aaa; 
+        }
+        20%{
+            background-color: #87d9ff;
+            box-shadow: none;
+        }
+        to{
+            background-color: #87d9ff;
+            box-shadow: none;
+        }
+    }

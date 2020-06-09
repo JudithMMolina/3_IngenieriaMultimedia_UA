@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Irene Clemente Aracil, Judith Mula Molina">
+        <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="Icons/css/fontello.css" />
+        <link rel="stylesheet" type="text/css" href="tienda.css" />
+        <script src="./jquery-3.3.1.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="jQuery.ui.touch-punch.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="tienda.js"></script>
+        <title>Compras</title>
+    </head>
+
+    <body>
+            <div id="mano"></div>
+            <div id="mano2"></div>
+            <div id="mano3"></div>
+            <div id="mano4"></div>
+            <div id="mano5"></div>
+        <h1>¿Puedo comprarlo?</h1>
+        <main>
+            <div id="enunciado">
+                <div title="Monedero que tiene las monedas" id="monedero">
+                    <div></div>
+                </div>
+                <div id="objeto" title="Objeto que quieres comprar">
+                    <div id="etiqueta"><p></p></div>
+                </div>
+            </div>
+            
+            <div id="pregunta">
+               
+                <div id="contenido" class="segunda oculto" title="Bandeja para poner las monedas que necesitas">
+                        <p>Arrastra aqui o pulsa las monedas que necesitas <br> ¡Usa el mínimo posible!</p>
+                </div>
+                <div class="segunda" title="Pulsa si o no segun si puedes comprar el objeto con las monedas que tienes.">
+                    <button id="si">Si</button>
+                    <button id="no">No</button>
+                </div>
+            </div> 
+            
+        </main>
+        <p id="subtitulos"  style="height:1em; background-color:transparent;">&nbsp;</p>
+        <div>
+            <a title="Volver al menu de juegos" id="volver" href="./index.html" class="boton">Volver <span class="icon-level-up icon"></span></a>
+            <button  id="ayuda" value="Ayuda" type="button" class="boton">Ayuda <span class="icon-help icon"></span></button>
+            <button id="corregir" value="corregir" type="button" class="boton oculto"  >Corregir <span class="icon-ok icon"></span></button>
+        </div>
+        
+    </body>
+</html>

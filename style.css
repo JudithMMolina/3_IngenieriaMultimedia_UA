@@ -1,0 +1,102 @@
+*{
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+}
+
+
+html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img{
+    width: 18em;
+    height: 17em;
+    margin: 1em;
+    border-radius: 10px;
+
+    box-shadow: 0px 5px 10px 5px #aaa;
+}
+
+img:hover{
+    filter: grayscale(100%);
+    box-shadow: 0px 0px;
+}
+
+h1{
+    text-align: center;
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0.2em 0 0.5em 0;
+
+}
+
+body>div{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+body{
+    background-image: url("./Imagenes/image-from-rawpixel-id-513083-jpeg.jpg");
+    background-size: 40em;
+}
+#profesor{
+    float: right;
+    margin: 0.5em;
+    font-size: 2em;
+    padding: 0.3em 0.5em;
+    border-radius: 5px;
+    background-color: #ffd191;
+    border-color: #ffd191;
+    font-weight: bold; 
+    box-shadow: 0px 5px 10px 5px #aaa; 
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-top: 2em;
+    margin-right: 1.25em;
+    border: 3px solid transparent;
+}
+#profesor:hover{
+    background-color: #ffb959;
+    border-color: #ffb959;
+    box-shadow: 0px 0px;
+}
+
+#profesor:focus{
+    box-shadow: none;
+    color: white;
+    background-color: black;
+    outline: none;
+    border: 3px solid white;
+}
+
+.icon{
+    font-size: 1.5em;
+}
+
+
+
+a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+a>div{
+    font-size: 2em;
+}
+
+a:focus{
+    outline: 3px solid black;
+    box-shadow: 0 0 3px 3px black;
+    filter: grayscale(100%);
+}
+
+
